@@ -1,5 +1,16 @@
 
-##Image Contributions:
+# Intro
+### Author: 
+Jacki Bostow
+### Description: 
+this project is a part of the Udacity React program.  Starter code was used as well as Create React App.
+
+# Dependencies 
+This project must be initialized with yarn or npm.  Be sure you have one of these package managers installed.
+1. Make sure you're at the root folder /app.
+2. Run yarn init
+
+## Image Contributions:
 * Intro Logo from [freeimages.com](https://www.freeimages.com/photographer/coscurro-37545)
 * Avatar Images from [pixabay.com](https://pixabay.com)
 
