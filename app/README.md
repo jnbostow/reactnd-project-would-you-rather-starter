@@ -1,3 +1,9 @@
+
+##Image Contributions:
+* Intro Logo from [freeimages.com](https://www.freeimages.com/photographer/coscurro-37545)
+* Avatar Images from [pixabay.com](https://pixabay.com)
+
+
 # Would You Rather Project
 
 This is the starter code for the final assessment project for Udacity's React & Redux course.

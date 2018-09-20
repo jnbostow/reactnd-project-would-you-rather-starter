@@ -2,7 +2,7 @@ let users = {
   sarahedo: {
     id: 'sarahedo',
     name: 'Sarah Edo',
-    avatarURL: ,
+    avatarURL: "https://cdn.pixabay.com/photo/2015/12/13/20/43/face-1091702_1280.jpg",
     answers: {
       "8xf0y6ziyjabvozdd253nd": 'optionOne',
       "6ni6ok3ym7mf1p33lnez": 'optionOne',
@@ -14,7 +14,7 @@ let users = {
   tylermcginnis: {
     id: 'tylermcginnis',
     name: 'Tyler McGinnis',
-    avatarURL: ,
+    avatarURL:  "https://cdn.pixabay.com/photo/2016/12/29/21/16/black-1939357_1280.jpg",
     answers: {
       "vthrdm985a262al8qx3do": 'optionOne',
       "xj352vofupe1dqz9emx13r": 'optionTwo',
@@ -24,7 +24,7 @@ let users = {
   johndoe: {
     id: 'johndoe',
     name: 'John Doe',
-    avatarURL: ,
+    avatarURL:  "https://cdn.pixabay.com/photo/2015/09/12/23/03/doll-937514_1280.jpg",
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',
@@ -149,12 +149,21 @@ function formatQuestion ({ optionOneText, optionTwoText, author }) {
 
 export function _saveQuestion (question) {
   return new Promise((res, rej) => {
-    const formattedQuestion = formatQuestion(question)
+    const authedUser = question.author;
+    const formattedQuestion = formatQuestion(question);
 
     setTimeout(() => {
       questions = {
         ...questions,
         [formattedQuestion.id]: formattedQuestion
+      }
+      
+      users = {
+        ...users,
+        [authedUser]: {
+          ...users[authedUser],
+          questions: users[authedUser].questions.concat([formattedQuestion.id])
+        }
       }
 
       res(formattedQuestion)
