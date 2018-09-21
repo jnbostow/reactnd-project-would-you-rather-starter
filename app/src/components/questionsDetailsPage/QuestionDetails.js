@@ -38,7 +38,7 @@ class QuestionDetails extends Component {
                         <p className="question-card-text-header">Would You Rather?</p>
 
                         <form onSubmit={this.handleSubmit}>
-                            <label for="">
+                            <label>
                                 <input defaultChecked type="radio" name="selectedOption" value="optionOne" onChange={this.handleChange} />
                                 {question.optionOne.text}
                             </label>
