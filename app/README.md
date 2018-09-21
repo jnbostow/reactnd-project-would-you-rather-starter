@@ -9,6 +9,7 @@ this project is a part of the Udacity React program.  Starter code was used as w
 This project must be initialized with yarn or npm.  Be sure you have one of these package managers installed.
 1. Make sure you're at the root folder /app.
 2. Run yarn install
+3. Now run yarn start to start the application
 
 ## Image Contributions:
 * Intro Logo from [freeimages.com](https://www.freeimages.com/photographer/coscurro-37545)
