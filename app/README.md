@@ -8,7 +8,7 @@ this project is a part of the Udacity React program.  Starter code was used as w
 # Dependencies 
 This project must be initialized with yarn or npm.  Be sure you have one of these package managers installed.
 1. Make sure you're at the root folder /app.
-2. Run yarn init
+2. Run yarn install
 
 ## Image Contributions:
 * Intro Logo from [freeimages.com](https://www.freeimages.com/photographer/coscurro-37545)

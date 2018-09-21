@@ -33,9 +33,9 @@ class App extends Component {
                                 <Nav/>
                             </header>
                             <main>
-                                <Route path='/new' exact component={AddForm} />
+                                <Route path='/add' exact component={AddForm} />
                                 <Route exact path='/' component={QuestionsList} />
-                                <Route path='/question/:id' component={QuestionPage} />
+                                <Route path='/questions/:question_id' component={QuestionPage} />
                                 <Route path='/leaderboard' component={Leaderboard} />
                             </main>
                         </Fragment>

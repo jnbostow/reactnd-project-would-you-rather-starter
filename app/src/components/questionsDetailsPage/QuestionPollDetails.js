@@ -1,7 +1,7 @@
 
 import React, { Component, Fragment } from 'react'
 import QuestionCardTemplate from '../templates/QuestionCardTemplate'
-import QuestionPollDetailsOptionCards from "./QuestionPollDetailsOptionCards";
+import OptionCards from "./OptionCards";
 
 
 class QuestionPollDetails extends Component {
@@ -36,11 +36,11 @@ class QuestionPollDetails extends Component {
             <QuestionCardTemplate author={author} componentText={
                 <Fragment>
 
-                    < QuestionPollDetailsOptionCards totalVotes={totalVotes}
+                    < OptionCards totalVotes={totalVotes}
                     option={optOne}
                     authorUser={authorUser}
                     />
-                    <QuestionPollDetailsOptionCards totalVotes={totalVotes}
+                    <OptionCards totalVotes={totalVotes}
                     option={optTwo}
                     authorUser={authorUser}
                     />

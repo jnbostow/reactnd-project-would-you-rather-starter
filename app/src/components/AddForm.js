@@ -35,6 +35,9 @@ class AddForm extends Component {
 
 
     render() {
+        const { q1,q2 } = this.state
+        const isEnabled = q1.length > 0 && q2.length > 0
+
         return (
             <div className="new-question-form">
                 <h2>Create New Question</h2>
@@ -42,14 +45,14 @@ class AddForm extends Component {
                 <div>Would you Rather...</div>
                 <form onSubmit={this.handleSubmit}>
                     <input type='text' placeholder='enter question one text here'
-                           name='q1' value={this.state.q1} onChange={this.handleChange} />
+                           name='q1' value={q1} onChange={this.handleChange} />
 
                     <div>OR</div>
 
                     <input type='text' placeholder='enter question two text here'
-                           name='q2' value={this.state.q2} onChange={this.handleChange} />
+                           name='q2' value={q2} onChange={this.handleChange} />
 
-                    <input type="submit" value="submit" />
+                    <input type="submit" value="submit" disabled={!isEnabled}/>
                 </form>
             </div>
         )
