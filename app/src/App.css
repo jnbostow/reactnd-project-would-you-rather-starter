@@ -87,7 +87,7 @@ input[type="submit"]:hover {
 
 .login {
   width: 370px;/* 300px;*/
-  max-height: 400px;
+  /*max-height: 400px;*/
   padding: 15px;
   border-radius: 8px;
   background-color: white;
