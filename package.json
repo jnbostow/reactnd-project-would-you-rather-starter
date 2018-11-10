@@ -2,7 +2,7 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jnbostow.github.io/reactnd-project-would-you-rather-starter/",
+  "homepage": "https://jnbostow.github.io/would-you-rather-project/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.5.0",

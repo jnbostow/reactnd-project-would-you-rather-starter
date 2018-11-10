@@ -1,8 +1,12 @@
+import avatar_1 from '../images/avatar_1.jpg'
+import avatar_2 from '../images/avatar_2.jpg'
+import avatar_3 from '../images/avatar_3.jpg'
+
 let users = {
-  sarahedo: {
-    id: 'sarahedo',
-    name: 'Sarah Edo',
-    avatarURL: "../images/avatar_1.jpg",
+  jackibostow: {
+    id: 'jackibostow',
+    name: 'Jacki Bostow',
+    avatarURL: avatar_1,
     answers: {
       "8xf0y6ziyjabvozdd253nd": 'optionOne',
       "6ni6ok3ym7mf1p33lnez": 'optionOne',
@@ -11,20 +15,20 @@ let users = {
     },
     questions: ['8xf0y6ziyjabvozdd253nd', 'am8ehyc8byjqgar0jgpub9']
   },
-  tylermcginnis: {
-    id: 'tylermcginnis',
-    name: 'Tyler McGinnis',
-    avatarURL:  "../images/avatar_2.jpg",
+  serenawilliams: {
+    id: 'serenawilliams',
+    name: 'Serena Williams',
+    avatarURL: avatar_2,
     answers: {
       "vthrdm985a262al8qx3do": 'optionOne',
       "xj352vofupe1dqz9emx13r": 'optionTwo',
     },
     questions: ['loxhs1bqm25b708cmbf3g', 'vthrdm985a262al8qx3do'],
   },
-  johndoe: {
-    id: 'johndoe',
-    name: 'John Doe',
-    avatarURL:  "../images/avatar_3.jpg",
+  janedoe: {
+    id: 'janedoe',
+    name: 'Jane Doe',
+    avatarURL: avatar_3,
     answers: {
       "xj352vofupe1dqz9emx13r": 'optionOne',
       "vthrdm985a262al8qx3do": 'optionTwo',
@@ -37,10 +41,10 @@ let users = {
 let questions = {
   "8xf0y6ziyjabvozdd253nd": {
     id: '8xf0y6ziyjabvozdd253nd',
-    author: 'sarahedo',
+    author: 'jackibostow',
     timestamp: 1467166872634,
     optionOne: {
-      votes: ['sarahedo'],
+      votes: ['jackibostow'],
       text: 'have horrible short term memory',
     },
     optionTwo: {
@@ -50,66 +54,66 @@ let questions = {
   },
   "6ni6ok3ym7mf1p33lnez": {
     id: '6ni6ok3ym7mf1p33lnez',
-    author: 'johndoe',
+    author: 'janedoe',
     timestamp: 1468479767190,
     optionOne: {
       votes: [],
       text: 'become a superhero',
     },
     optionTwo: {
-      votes: ['johndoe', 'sarahedo'],
+      votes: ['janedoe', 'jackibostow'],
       text: 'become a supervillian'
     }
   },
   "am8ehyc8byjqgar0jgpub9": {
     id: 'am8ehyc8byjqgar0jgpub9',
-    author: 'sarahedo',
+    author: 'jackibostow',
     timestamp: 1488579767190,
     optionOne: {
       votes: [],
       text: 'be telekinetic',
     },
     optionTwo: {
-      votes: ['sarahedo'],
+      votes: ['jackibostow'],
       text: 'be telepathic'
     }
   },
   "loxhs1bqm25b708cmbf3g": {
     id: 'loxhs1bqm25b708cmbf3g',
-    author: 'tylermcginnis',
+    author: 'serenawilliams',
     timestamp: 1482579767190,
     optionOne: {
       votes: [],
       text: 'be a front-end developer',
     },
     optionTwo: {
-      votes: ['sarahedo'],
+      votes: ['jackibostow'],
       text: 'be a back-end developer'
     }
   },
   "vthrdm985a262al8qx3do": {
     id: 'vthrdm985a262al8qx3do',
-    author: 'tylermcginnis',
+    author: 'serenawilliams',
     timestamp: 1489579767190,
     optionOne: {
-      votes: ['tylermcginnis'],
+      votes: ['serenawilliams'],
       text: 'find $50 yourself',
     },
     optionTwo: {
-      votes: ['johndoe'],
+      votes: ['janedoe'],
       text: 'have your best friend find $500'
     }
   },
   "xj352vofupe1dqz9emx13r": {
     id: 'xj352vofupe1dqz9emx13r',
-    author: 'johndoe',
+    author: 'janedoe',
     timestamp: 1493579767190,
     optionOne: {
-      votes: ['johndoe'],
+      votes: ['janedoe'],
       text: 'write JavaScript',
     },
     optionTwo: {
-      votes: ['tylermcginnis'],
+      votes: ['serenawilliams'],
       text: 'write Swift'
     }
   },

@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     const { loading, authorUser } = this.props
       return (
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div className="App">
               <LoadingBar />
                 { !loading &&
