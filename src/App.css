@@ -197,7 +197,7 @@ form select, form input[type=submit] {
 .question-list-nav li {
   list-style-type: none;
   width: 50%;
-  padding: 1.5em 0;
+  padding: 1.5em .5em;
   background-color: #E80C7A;
 }
 
