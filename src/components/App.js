@@ -13,6 +13,9 @@ import AddForm from '../components/AddForm'
 import Leaderboard from './leaderboard/Leaderboard'
 import LoadingBar from 'react-redux-loading'
 import '../App.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars, faHome, faPlus, faList } from '@fortawesome/free-solid-svg-icons'
+library.add(faBars, faHome, faPlus, faList)
 
 class App extends Component {
   componentDidMount() {

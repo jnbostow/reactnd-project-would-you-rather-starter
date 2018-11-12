@@ -55,30 +55,47 @@ input[type="submit"]:hover {
   width: 100%;
   background-color: #43676B;
   box-shadow: 0 2px 5px black;
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-areas: 'links login';
   align-items: center;
   padding: 0 30px 0 0;
+  min-height: 80px;
+  justify-content: normal;
 }
 
-.nav ul {
-  padding: initial;
-}
-
-.nav li {
-  min-width: 140px;
+.nav-list {
+  grid-area: links;
+  margin: inherit;
   list-style-type: none;
   padding: 1em;
-  display: inline-block;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
 }
 
-.nav li:hover  {
-  background-color: #E80C7A;
+.nav li a:hover  {
+  color: #E80C7A;
+  cursor: pointer;
+}
+
+.nav li a.active {
+  color: #E80C7A;
 }
 
 .nav li a {
   text-decoration: none;
   color: white;
+}
+
+.nav-icon {
+  font-size: 1.5em;
+  margin: auto;
+  min-width: 75px;
+}
+
+.nav-icon + span {
+  font-size: .8em;
+  display: block;
 }
 
 .login {
@@ -382,15 +399,23 @@ img.user-img-icon {
 
 .logout:hover {
   cursor: pointer;
+  color: #E80C7A;
 }
 
 .user-login-nav {
+  grid-area: login;
   color: white;
-  white-space: nowrap;
   margin-left: auto;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.username {
+  display: block;
+  white-space: nowrap;
 }
 
 .user-login-nav > * {
@@ -409,6 +434,47 @@ img.user-img-icon {
   font-size: 100px;
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*display nav icons*/
+@media only screen and (max-width: 710px) {
+  .nav {
+    justify-content: space-between;
+  }
+  .nav-icon + span {
+    font-size: .5em;
+  }
+
+}
+/*place nav icons on their own line*/
+@media only screen and (max-width: 550px) {
+  .nav {
+    padding: 0;
+    grid-template-areas: 'login' 'links';
+    justify-content: stretch;
+  }
+  .nav-icon + span {
+    font-size: .5em;
+  }
+  .nav-list {
+    padding: 5px 0 10px 0;
+  }
+  .user-login-nav {
+    margin: 10px;
+    font-size: .8em;
+  }
+  img.user-img-icon {
+    max-width: 40px;
+  }
+}
+
+/*media query for login*/
 @media only screen and (max-width: 370px) {
   .app-title {
     flex-flow: column nowrap;

@@ -14,7 +14,7 @@ function Logout(props) {
 
     return (
         <div className="user-login-nav">
-            <div>Hello, {users[authorUser].name}</div>
+            <div>Hello, <span className="username">{users[authorUser].name}</span></div>
             <img className="user-img-icon" src={users[authorUser].avatarURL} alt={users[authorUser].name} />
             <div className="logout" onClick={handleLogOut}>Logout</div>
         </div>

@@ -13,6 +13,24 @@ This project is a part of the Udacity React program.  Per course requirements, f
 The app allows a list of pre-defined users to choose from two impossible choices.  The app allows a user to select a choice from posted questions, make a new question and displays a leaderboard.  App allows pre-defined users to log in and out.
 
 ## Dependencies 
+__Yarn__ <br>
+To install yarn, in your terminal run `brew install yarn`.
+If you do not have Homebrew or you are using an OS other than mac, follow further instructions [here](https://yarnpkg.com/en/docs/install)
+
+__Node__ <br> 
+To install, in your terminal run `brew install node`
+
+__React__ <br>
+To install, in your terminal run `yarn add react`
+
+__Fontawesome__ <br> 
+To install run these commands in your terminal.<br>
+`yarn add @fortawesome/fontawesome-svg-core`<br>
+`yarn add @fortawesome/free-solid-svg-icons`<br>
+`yarn add @fortawesome/react-fontawesome`<br>
+
+
+## Instructions
 This project must be initialized with yarn or npm.  Be sure you have one of these package managers installed.
 1. Clone this project to a local directory. In a terminal run `git clone git@github.com:jnbostow/would-you-rather-project.git`
 2. Make sure you're at the root folder

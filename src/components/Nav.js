@@ -1,25 +1,28 @@
-
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Logout from '../components/Logout'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export default function Nav () {
+export default function Nav(props) {
     return (
         <nav className='nav'>
-            <ul>
+            <ul className={`nav-list`} >
                 <li>
                     <NavLink to='/' exact activeClassName='active'>
-                        Home
+                        <FontAwesomeIcon className="nav-icon" icon="home" />
+                        <span>Home</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to='/add' activeClassName='active'>
-                        New Question
+                        <FontAwesomeIcon className="nav-icon" icon="plus" />
+                        <span>New Question</span>
                     </NavLink>
                 </li>
                 <li>
                     <NavLink to='/leaderboard' activeClassName='active'>
-                        Leaderboard
+                        <FontAwesomeIcon className="nav-icon" icon="list" />
+                        <span>Leaderboard</span>
                     </NavLink>
                 </li>
             </ul>
