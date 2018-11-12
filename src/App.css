@@ -459,9 +459,6 @@ img.user-img-icon {
     grid-template-areas: 'login' 'links';
     justify-content: stretch;
   }
-  .nav-icon + span {
-    font-size: .5em;
-  }
   .nav-list {
     padding: 5px 0 10px 0;
   }
